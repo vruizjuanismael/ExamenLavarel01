@@ -10,11 +10,14 @@
     <form action="{{ route('vehiculo.store') }}" method="post">
         @csrf
         <label for="placa">Placa</label>
-        <input type="text" name="placa">
+        <input type="text" name="placa" id="placa" required>
+        
         <label for="modelo">Modelo</label>
-        <input type="text" name="modelo">
+        <input type="text" name="modelo" id="modelo" required>
+        
         <label for="propietario">Propietario</label>
-        <input type="text" name="propietario">
+        <input type="text" name="propietario" id="propietario" required>
+        
         <input type="submit" value="Guardar">
     </form>
 </body>

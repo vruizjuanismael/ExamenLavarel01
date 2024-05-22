@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Entrada;
+use App\Models\Vehiculo;
 use Illuminate\Http\Request;
 use App\Http\Requests\EntradaRequest;
 
@@ -23,7 +24,8 @@ class EntradaController extends Controller
      */
     public function create()
     {
-        return view('entrada.create');
+        $vehiculos = Vehiculo::all();
+        return view('entrada.create', compact('vehiculos'));
     }
 
     /**
