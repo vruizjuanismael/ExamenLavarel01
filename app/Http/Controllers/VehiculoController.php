@@ -57,7 +57,7 @@ class VehiculoController extends Controller
     public function edit($id)
     {
         $vehiculo = Vehiculo::findOrFail($id);
-        return view('vehiculo.edit', compact('vehiculo'));
+        return view('vehiculo.action', compact('vehiculo'));
     }
 
     /**

@@ -58,7 +58,7 @@ class EntradaController extends Controller
     public function edit($id)
     {
         $entrada = Entrada::findOrFail($id);
-        return view('entrada.edit', compact('entrada'));
+        return view('entrada.action', compact('entrada'));
     }
 
     /**

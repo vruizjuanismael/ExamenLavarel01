@@ -91,7 +91,7 @@
     function editar(id){
       $.ajax({
             method: 'get',
-            url: `{{ url('entrada') }}/${id}/edit`,
+            url: `{{ url('vehiculo') }}/${id}/edit`,
             success: function(res){
               $('#modal-update .modal-content').html(res);
               $('#modal-update').modal('show');
